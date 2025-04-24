@@ -13,7 +13,7 @@ export const TipTap = ({
         content: description,
         editorProps: {
             attributes: {
-                class: '',
+                class: 'rounded-md border min-h-[150px] border-input',
             },
         },
         onUpdate({ editor }) {
@@ -22,7 +22,7 @@ export const TipTap = ({
         },
     });
     return (
-        <div>
+        <div className="flex min-h-[250px] flex-col justify-stretch">
             <EditorContent editor={editor} />
         </div>
     );
